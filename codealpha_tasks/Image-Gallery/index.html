@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="filters">
+
+<button class="active" onclick="filterSelection('all')">All</button>
+<button onclick="filterSelection('nature')">Nature</button>
+<button onclick="filterSelection('city')">City</button>
+<button onclick="filterSelection('animals')">Animals</button>
+
+</div>
+
+<div class="gallery">
+
+<div class="image nature">
+<img src="images/image1.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image city">
+<img src="images/image2.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image animals">
+<img src="images/image3.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image nature">
+<img src="images/image4.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image city">
+<img src="images/image5.jpg" onclick="openLightbox(this)">
+</div>
+
+<div class="image animals">
+<img src="images/image6.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image nature">
+<img src="images/image7.jfif" onclick="openLightbox(this)">
+</div>
+
+<div class="image city">
+<img src="images/image8.jfif" onclick="openLightbox(this)">
+</div>
+
+</div>
+
+<div id="lightbox">
+
+<span id="close" onclick="closeLightbox()">&times;</span>
+
+<button class="prev" onclick="changeImage(-1)">❮</button>
+
+<img id="lightbox-img">
+
+<button class="next" onclick="changeImage(1)">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
